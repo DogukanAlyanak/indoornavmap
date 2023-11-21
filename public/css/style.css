@@ -1,0 +1,7 @@
+.map-item {
+    cursor: context-menu;
+}
+
+#worldMap {
+    /* overflow: hidden; */
+}
