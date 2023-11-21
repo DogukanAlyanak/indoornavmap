@@ -1,0 +1,50 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+        "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+div.content#worldMap,
+div.content {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.content h1,
+h2,
+h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 20px;
+}
+
+div.content h1 {
+    font-size: 3em;
+    color: #2D6ABA;
+}
+
+div.content h2 {
+    font-size: 1.5em;
+}
+
+div.content h3 {
+    font-size: 1em;
+}
+
+div.content h3 a {
+    color: #1C4B8A;
+}
+
+
+#worldMap>a {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: block;
+    z-index: 10;
+}
