@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<!-- version : 1.0.2.2311220908 -->
+<!-- version : 1.0.3.2311221504 -->
 
 <head>
   <meta charset="UTF-8">
@@ -11,12 +11,31 @@
 
   <title>INDOOR MAP</title>
 
-  <link rel="stylesheet" href="public/css/map.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!---Fontawesome v6.2.0 css -->
+  <link rel="stylesheet" href="public/plugin/fontawesome/6.2.0/css/all.min.css" />
+
+
   <link rel="stylesheet" href="public/css/style.css" type="text/css">
 </head>
 
 <body>
-  <div class="content">
+
+
+
+  <div class="zoom-buttons">
+    <button type="button" class="btn btn-primary btn-md zoom-in">
+      <i class="fa-regular fa-magnifying-glass-plus"></i>
+    </button>
+    <button type="button" class="btn btn-primary btn-md zoom-out">
+      <i class="fa-regular fa-magnifying-glass-minus"></i>
+    </button>
+  </div>
+
+  <div class="mapping">
     <div id="worldMap">
       <img src="public/img/3_floor_map.jpg" class="map-image" main-width="6767" main-height="3805" />
 
@@ -28,6 +47,12 @@
   </div>
 
 
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+    integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="public/js/spryMap-2.js"></script>
   <script type="text/javascript" src="public/js/script.js"></script>
 

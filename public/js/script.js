@@ -1,9 +1,17 @@
 const mapID = "worldMap"
+var selectedZoom = 7
+var beforezoom = selectedZoom;
 
 window.onload = function () {
     genMap()
-    getEastMapZoom(10);
-    getCoords(-4100, -325);
+    getEastMapZoom(selectedZoom);
+
+    setTimeout(() => {
+        getCoords(-1054, -68);
+    }, 400);
+    setTimeout(() => {
+        getCoords(-1054, -68);
+    }, 2000);
 }
 
 function genMap() {
@@ -13,6 +21,11 @@ function genMap() {
         height: window.innerHeight,
         cssClass: "mappy"
     });
+
+    let mItems = document.getElementsByClassName("map-item")
+    for (const child of mItems) {
+        child.style.position="absolute"
+    };
 }
 
 function getCoords(y = 0, x = 0) {
@@ -31,8 +44,25 @@ function getEastMapZoom(zoom = 1) {
     if (zoom < 1) {
         zoom = 1
     }
+    selectedZoom = zoom
+    let diff = beforezoom - selectedZoom;
 
+    if (beforezoom == selectedZoom) {
+        return false;
+    }
+
+    console.log(beforezoom)
+    console.log(selectedZoom)
+    console.log(diff)
+
+    if (selectedZoom < beforezoom) {
+        zoomtype = "zoomout";
+    } else {
+        zoomtype = "zoomin";
+    }
+    console.log(zoomtype)
     zoom = 10 - zoom + 1 // revers
+
 
     let map = document.getElementById(mapID)
     for (const child of map.children) {
@@ -62,8 +92,23 @@ function getEastMapZoom(zoom = 1) {
             map.style.width = w + "px";
             map.style.height = h + "px";
 
-            map.style.left = parseInt(parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()) / zoom) + "px"
-            map.style.top = parseInt(parseInt(map.style.top.substring(0, map.style.top.length - 2).trim()) / zoom) + "px"
+            // --- BAD WORKING ---
+            // map.style.left = parseInt(parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()) / zoom) + "px"
+            // map.style.top = parseInt(parseInt(map.style.top.substring(0, map.style.top.length - 2).trim()) / zoom) + "px"
+            /*
+            if (zoomtype == "zoomin") {
+                let l = parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()),
+                    t = parseInt(map.style.top.substring(0, map.style.top.length - 2).trim())
+
+                console.log(map.style.left)
+                
+                map.style.left = parseInt(l - (window.innerWidth * -diff)) + "px"
+                map.style.top = parseInt(t - (window.innerHeight * -diff)) + "px"
+                
+                console.log(map.style.left)
+            }
+            */
+            getCoords(map.style.left, map.style.top);
         }
 
 
@@ -105,4 +150,19 @@ function getEastMapZoom(zoom = 1) {
             mapItem.style.top = parseInt(mainT / zoom) + "px";
         }
     }
+}
+
+
+document.getElementsByClassName('zoom-in')[0].addEventListener('click', zoomInOnMap)
+function zoomInOnMap() {
+    beforezoom = selectedZoom
+    selectedZoom += 0.5;
+    getEastMapZoom(selectedZoom);
+}
+
+document.getElementsByClassName('zoom-out')[0].addEventListener('click', zoomOutOnMap)
+function zoomOutOnMap() {
+    beforezoom = selectedZoom
+    selectedZoom -= 0.5;
+    getEastMapZoom(selectedZoom);
 }

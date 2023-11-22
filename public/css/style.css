@@ -1,7 +1,23 @@
-.map-item {
-    cursor: context-menu;
+body {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
 }
 
 #worldMap {
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+.zoom-buttons {
+    display: block;
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    z-index: 999;
+    width: 60px;
+}
+
+.zoom-out,
+.zoom-in {
+    margin-bottom: 4px;
 }
