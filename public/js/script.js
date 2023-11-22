@@ -1,20 +1,23 @@
 const mapID = "worldMap"
 
 window.onload = function () {
+    genMap()
+    getEastMapZoom(10);
+    getCoords(-4100, -325);
+}
+
+function genMap() {
     var map = new SpryMap({
         id: mapID,
         width: window.innerWidth,
         height: window.innerHeight,
         cssClass: "mappy"
     });
-
-    getEastMapZoom(3);
-    getCoords(0, 0);
 }
 
-function getCoords(x = 0, y = 0) {
+function getCoords(y = 0, x = 0) {
     let map = document.getElementById(mapID)
-    xpx = x + "px",
+        xpx = x + "px",
         ypx = y + "px"
 
     map.style.top = xpx
