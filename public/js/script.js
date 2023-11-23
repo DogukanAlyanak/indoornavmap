@@ -1,18 +1,103 @@
-const mapID = "worldMap"
-var selectedZoom = 7
-var beforezoom = selectedZoom;
 
+
+
+// VARIABLES /////////////////////////////////////////////////////////
+const mapID = "worldMap"
+var selectedZoom = 6.5,
+    beforezoom = selectedZoom,
+    focusX = -1183, focusY = -166,
+    pinX = 4898, pinY = 3143,
+    locations
+
+
+
+
+
+
+// INCLUDES ////////////////////////////////////////////////////////
+readTextFile("./public/json/locations.json", function (e) {
+    locations = JSON.parse(e);
+});
+
+
+
+
+
+
+// EVENTS ////////////////////////////////////////////////////////////
 window.onload = function () {
+    console.log(locations)
+
+    i = 8;
+    pinX = locations[i].pinX
+    pinY = locations[i].pinY
+
+    getPinLocate(pinX, pinY)
+
     genMap()
     getEastMapZoom(selectedZoom);
-
     setTimeout(() => {
-        getCoords(-1054, -68);
-    }, 400);
-    setTimeout(() => {
-        getCoords(-1054, -68);
-    }, 2000);
+        document.getElementsByClassName('zoom-in')[0].click();
+        setTimeout(() => {
+            getCoords(focusX, focusY);
+        }, 400);
+    }, 800);
 }
+
+window.onresize = function () {
+    onResizeWindow()
+};
+
+function onResizeWindow() {
+    let comp = document.getElementsByClassName('mappy')[0]
+    comp.style.width = window.innerWidth;
+    comp.style.height = window.innerHeight;
+
+    console.log(comp.style.width)
+    console.log(comp.style.height)
+    /*  ????????????????????? */
+}
+
+
+document.getElementsByClassName('zoom-in')[0].addEventListener('click', zoomInOnMap)
+function zoomInOnMap() {
+    beforezoom = selectedZoom
+    selectedZoom += 0.5;
+    getEastMapZoom(selectedZoom);
+}
+
+document.getElementsByClassName('zoom-out')[0].addEventListener('click', zoomOutOnMap)
+function zoomOutOnMap() {
+    beforezoom = selectedZoom
+    selectedZoom -= 0.5;
+    getEastMapZoom(selectedZoom);
+}
+
+
+
+
+
+
+
+
+// FUNCTIONS ////////////////////////////////////////////////////////////
+function getPinLocate(x, y) {
+    let pin = document.getElementById('pin')
+    pin.style.top = x;
+    pin.style.left = y;
+
+    let pinImage = pin.children[0]
+
+    for (const attr of pinImage.attributes) {
+        if (attr.name == "main-left") {
+            attr.value = x
+        }
+        if (attr.name == "main-top") {
+            attr.value = y
+        }
+    }
+}
+
 
 function genMap() {
     var map = new SpryMap({
@@ -24,17 +109,17 @@ function genMap() {
 
     let mItems = document.getElementsByClassName("map-item")
     for (const child of mItems) {
-        child.style.position="absolute"
+        child.style.position = "absolute"
     };
 }
 
-function getCoords(y = 0, x = 0) {
+function getCoords(x = 0, y = 0) {
     let map = document.getElementById(mapID)
-        xpx = x + "px",
+    xpx = x + "px",
         ypx = y + "px"
 
-    map.style.top = xpx
-    map.style.left = ypx
+    map.style.top = ypx
+    map.style.left = xpx
 }
 
 function getEastMapZoom(zoom = 1) {
@@ -53,14 +138,13 @@ function getEastMapZoom(zoom = 1) {
 
     console.log(beforezoom)
     console.log(selectedZoom)
-    console.log(diff)
 
     if (selectedZoom < beforezoom) {
         zoomtype = "zoomout";
     } else {
         zoomtype = "zoomin";
     }
-    console.log(zoomtype)
+
     zoom = 10 - zoom + 1 // revers
 
 
@@ -100,15 +184,13 @@ function getEastMapZoom(zoom = 1) {
                 let l = parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()),
                     t = parseInt(map.style.top.substring(0, map.style.top.length - 2).trim())
 
-                console.log(map.style.left)
                 
                 map.style.left = parseInt(l - (window.innerWidth * -diff)) + "px"
                 map.style.top = parseInt(t - (window.innerHeight * -diff)) + "px"
                 
-                console.log(map.style.left)
             }
             */
-            getCoords(map.style.left, map.style.top);
+            // getCoords(map.style.left, map.style.top);
         }
 
 
@@ -152,17 +234,15 @@ function getEastMapZoom(zoom = 1) {
     }
 }
 
-
-document.getElementsByClassName('zoom-in')[0].addEventListener('click', zoomInOnMap)
-function zoomInOnMap() {
-    beforezoom = selectedZoom
-    selectedZoom += 0.5;
-    getEastMapZoom(selectedZoom);
-}
-
-document.getElementsByClassName('zoom-out')[0].addEventListener('click', zoomOutOnMap)
-function zoomOutOnMap() {
-    beforezoom = selectedZoom
-    selectedZoom -= 0.5;
-    getEastMapZoom(selectedZoom);
+// json read
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
 }

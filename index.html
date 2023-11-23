@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<!-- version : 1.0.3.2311221504 -->
+<!-- version : 1.0.4.2311231152 -->
 
 <head>
   <meta charset="UTF-8">
@@ -17,6 +17,9 @@
 
   <!---Fontawesome v6.2.0 css -->
   <link rel="stylesheet" href="public/plugin/fontawesome/6.2.0/css/all.min.css" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
   <link rel="stylesheet" href="public/css/style.css" type="text/css">
@@ -37,10 +40,14 @@
 
   <div class="mapping">
     <div id="worldMap">
-      <img src="public/img/3_floor_map.jpg" class="map-image" main-width="6767" main-height="3805" />
+      <img src="public/img/3_floor_map.jpg" class="map-image" main-height="3805" main-width="6767" />
 
-      <a class="map-item" style="top:4000px;left:4000px;">
-        <img src="public/img/001.png" main-width="6767" main-height="3805" main-left="0" main-top="0" />
+      <a class="map-item" style="top:0px;left:0px;">
+        <img src="public/img/001.png" main-width="6767" main-height="3805" main-top="0" main-left="0" />
+      </a>
+
+      <a id="pin" class="map-item" style="top:2269px;left:4898px;">
+        <img src="public/img/pin.png" class="animate__animated animate__bounce animate__slowly animate__infinite" main-width="128" main-height="163" main-top="2269" main-left="4898" />
       </a>
 
     </div>
