@@ -26,37 +26,23 @@ readTextFile("./public/json/locations.json", function (e) {
 
 // EVENTS ////////////////////////////////////////////////////////////
 window.onload = function () {
-    console.log(locations)
-
-    i = 8;
-    pinX = locations[i].pinX
-    pinY = locations[i].pinY
-
-    getPinLocate(pinX, pinY)
-
-    genMap()
-    getEastMapZoom(selectedZoom);
-    setTimeout(() => {
-        document.getElementsByClassName('zoom-in')[0].click();
-        setTimeout(() => {
-            getCoords(focusX, focusY);
-        }, 400);
-    }, 800);
+    getStart()
 }
 
+
 window.onresize = function () {
-    onResizeWindow()
+    location.reload();
+    // onResizeWindow()
 };
 
-function onResizeWindow() {
+/* function onResizeWindow() {
     let comp = document.getElementsByClassName('mappy')[0]
     comp.style.width = window.innerWidth;
     comp.style.height = window.innerHeight;
 
     console.log(comp.style.width)
     console.log(comp.style.height)
-    /*  ????????????????????? */
-}
+} */
 
 
 document.getElementsByClassName('zoom-in')[0].addEventListener('click', zoomInOnMap)
@@ -81,6 +67,40 @@ function zoomOutOnMap() {
 
 
 // FUNCTIONS ////////////////////////////////////////////////////////////
+async function getStart() {
+    let timer = await setInterval(() => {
+        if (locations != undefined) {
+            clearInterval(timer);
+
+            i = 0;
+            pinX = locations[i].pinX
+            pinY = locations[i].pinY
+            focusX = locations[i].focusX
+            focusY = locations[i].focusY
+            selectedZoom = locations[i].zoom
+        
+            getPinLocate(pinX, pinY)
+        
+            genMap()
+            getEastMapZoom(selectedZoom);
+            setTimeout(() => {
+                document.getElementsByClassName('zoom-in')[0].click();
+                setTimeout(() => {
+                    getCoords(focusX, focusY);
+                    setTimeout(() => {
+                        let arr = document.querySelectorAll('.wait-loading');
+                        for (var i = 0; i < arr.length; i++) {
+                            arr[i].classList.remove("wait-loading");
+                        }
+                        document.getElementsByClassName('loading')[0].classList.add("hide");
+                    }, 40);
+                }, 40);
+            }, 40);
+        }
+    }, 40);  
+}
+
+
 function getPinLocate(x, y) {
     let pin = document.getElementById('pin')
     pin.style.top = x;
@@ -136,8 +156,8 @@ function getEastMapZoom(zoom = 1) {
         return false;
     }
 
-    console.log(beforezoom)
-    console.log(selectedZoom)
+    // console.log(beforezoom)
+    // console.log(selectedZoom)
 
     if (selectedZoom < beforezoom) {
         zoomtype = "zoomout";

@@ -3,41 +3,41 @@
         "id": 0,
         "name": "Ana Giriş",
         "code": "main_entrance",
-        "focusX" : -1042,
+        "focusX" : -1039,
         "focusY" : -107,
         "pinX" : 4898,
         "pinY" : 3143,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 1,
         "name": "Demir Kapı",
         "code": "iron_gate",
-        "focusX" : -1149,
-        "focusY" : 0,
+        "focusX" : -107,
+        "focusY" : -84,
         "pinX" : 938,
         "pinY" : 3372,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 2,
         "name": "B Blok Labatuvar",
         "code": "b_blok_lab",
-        "focusX" : 0,
-        "focusY" : 0,
+        "focusX" : -118,
+        "focusY" : -107,
         "pinX" : 1148,
         "pinY" : 2294,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 3,
         "name": "Doğu Otopark",
         "code": "east_parking_lot",
-        "focusX" : 0,
-        "focusY" : 0,
+        "focusX" : -48,
+        "focusY" : 100,
         "pinX" : 689,
         "pinY" : 1495,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 4,
@@ -46,27 +46,28 @@
         "focusX" : 0,
         "focusY" : 0,
         "pinX" : 30,
-        "pinY" : 1100
+        "pinY" : 1100,
+        "zoom" : 6.5
     },
     {
         "id": 5,
         "name": "C Blok",
         "code": "c_blok",
-        "focusX" : 0,
+        "focusX" : -1301,
         "focusY" : 0,
         "pinX" : 6530,
         "pinY" : 112,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 6,
         "name": "Asansör Giriş",
         "code": "elevator_entrance",
-        "focusX" : 0,
-        "focusY" : 0,
+        "focusX" : -1149,
+        "focusY" : -107,
         "pinX" : 5533,
         "pinY" : 2284,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 7,
@@ -76,16 +77,16 @@
         "focusY" : 0,
         "pinX" : 5055,
         "pinY" : 475,
-        "zoom" : 7
+        "zoom" : 6.5
     },
     {
         "id": 8,
         "name": "3. Kat Girişi",
         "code": "3rd_floor_entrance",
-        "focusX" : -1042,
+        "focusX" : -1039,
         "focusY" : -107,
         "pinX" : 4898,
         "pinY" : 2269,
-        "zoom" : 7
+        "zoom" : 6.5
     }
 ]

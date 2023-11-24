@@ -1,13 +1,12 @@
 body {
     overflow: hidden;
-    width: 150px;
-    height: 150px;
 }
 
 #worldMap {
     overflow: hidden;
 }
 
+/* --- zoom --------------------- */
 .zoom-buttons {
     display: block;
     position: fixed;
@@ -20,4 +19,19 @@ body {
 .zoom-out,
 .zoom-in {
     margin-bottom: 4px;
+}
+
+/* --- loading --------------------- */
+.loading {
+    width: 100%;
+    text-align: center;
+    margin-top: 45vh;
+}
+
+.wait-loading {
+    display: none!important;
+}
+
+.hide {
+    display: none!important;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<!-- version : 1.0.4.2311231152 -->
+<!-- version : 1.0.5.2311240854 -->
 
 <head>
   <meta charset="UTF-8">
@@ -26,10 +26,13 @@
 </head>
 
 <body>
+  <div class="loading">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 
-
-
-  <div class="zoom-buttons">
+  <div class="zoom-buttons wait-loading">
     <button type="button" class="btn btn-primary btn-md zoom-in">
       <i class="fa-regular fa-magnifying-glass-plus"></i>
     </button>
@@ -38,7 +41,7 @@
     </button>
   </div>
 
-  <div class="mapping">
+  <div class="mapping wait-loading">
     <div id="worldMap">
       <img src="public/img/3_floor_map.jpg" class="map-image" main-height="3805" main-width="6767" />
 
@@ -47,7 +50,8 @@
       </a>
 
       <a id="pin" class="map-item" style="top:2269px;left:4898px;">
-        <img src="public/img/pin.png" class="animate__animated animate__bounce animate__slowly animate__infinite" main-width="128" main-height="163" main-top="2269" main-left="4898" />
+        <img src="public/img/pin.png" class="animate__animated animate__bounce animate__slowly animate__infinite"
+          main-width="128" main-height="163" main-top="2269" main-left="4898" />
       </a>
 
     </div>
