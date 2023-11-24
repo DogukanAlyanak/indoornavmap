@@ -12,7 +12,7 @@ body {
     position: fixed;
     right: 0px;
     bottom: 10px;
-    z-index: 999;
+    z-index: 15;
     width: 60px;
 }
 
@@ -29,9 +29,54 @@ body {
 }
 
 .wait-loading {
-    display: none!important;
+    display: none !important;
 }
 
 .hide {
-    display: none!important;
+    display: none !important;
+}
+
+/* --- menu button --------------------- */
+div:has(.menu-button) {
+    display: block;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 15;
+    width: 60px;
+}
+
+/* --- menu bar --------------------- */
+.menu-bar {
+    display: block;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 20;
+    width: 90%;
+    max-width: 360px;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.menu-head hr {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.menu-bar .row {
+    width: 100%;
+    max-width: 360px;
+    margin-right: 0px;
+    padding-right: 10px;
+}
+
+.menu-route .col-12,
+.menu-select .col-12,
+.menu-head .col-12 {
+    margin: 15px;
+}
+
+.menu-select .col-12 {
+    margin-top: 0;
 }
