@@ -9,17 +9,18 @@ var selectedZoom = 6.5,
     pinX = 4898, pinY = 3143,
     locations,
     locationID,
-    targets = []
+    targets = [],
+    onMenu = false
 
 
 
 
 
 
-// INCLUDES ////////////////////////////////////////////////////////
-readTextFile("./public/json/locations.json", function (e) {
-    locations = JSON.parse(e);
-});
+    // INCLUDES ////////////////////////////////////////////////////////
+    readTextFile("./public/json/locations.json", function (e) {
+        locations = JSON.parse(e);
+    });
 
 
 for (let i = 0; i < 9; i++) {
@@ -55,7 +56,9 @@ window.onload = function () {
 
 
 window.onresize = function () {
-    location.reload();
+    if (onMenu == false) {
+        location.reload();
+    }
 };
 
 
@@ -80,15 +83,23 @@ function onCurrLocation() {
 
 document.getElementsByClassName('open-menu-button')[0].addEventListener('click', openMenuButton)
 function openMenuButton() {
+    onMenu = true;
     openMenu()
 }
 
 document.getElementsByClassName('close-menu-button')[0].addEventListener('click', closeMenuButton)
 function closeMenuButton() {
+    onMenu = false;
     closeMenu()
 }
 
-$(document).on(`change`, `#floatingSelect`, function() {
+document.getElementsByClassName('map-image')[0].addEventListener('click', clickItsMap)
+function clickItsMap() {
+    onMenu = false;
+    closeMenu()
+}
+
+$(document).on(`change`, `#floatingSelect`, function () {
     let targetID = $(this).val()
     let selectedTarget = targets[locationID][targetID]
     let selectedPaths = selectedTarget.paths
