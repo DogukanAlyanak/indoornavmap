@@ -87,7 +87,8 @@ div:has(.open-menu-button) {
 }
 
 .select2-results__options {
-    max-height: 70vh!important;
+    max-height: 50vh!important;
+    height: 50vh!important;
 }
 
 .select2-selection {
