@@ -1,0 +1,1082 @@
+[
+    {
+        "id": 0,
+        "room_code": 301,
+        "route_image": "c_blok_301.png",
+        "name": "Dr. Öğr. Üyesi Cevdet Bertan GÜLLÜDAĞ",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle ",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 1. kapı",
+                "description": "3. katta merdivenlerin karşısında soldaki kapı."
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "room_code": 302,
+        "route_image": "c_blok_302.png",
+        "name": "Dr. Öğr. Üyesi Kudret AKPINAR",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 2. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 2. kapı."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "room_code": 302,
+        "route_image": "c_blok_302.png",
+        "name": " Dr. Öğr. Üyesi Burcu TOPRAK",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 2. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 2. kapı."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "room_code": 303,
+        "route_image": "c_blok_303.png",
+        "name": "303 DERSLİK",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 3. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 3. kapı."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "room_code": 304,
+        "route_image": "c_blok_304.png",
+        "name": "DERSLİK",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 4. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "room_code": 305,
+        "route_image": "c_blok_305.png",
+        "name": "BİLGİSAYAR KULLANIM LAB.",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 5. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 5. kapı."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "room_code": 306,
+        "route_image": "c_blok_306.png",
+        "name": "DERSLİK",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 6. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 6. kapı."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "room_code": 307,
+        "route_image": "c_blok_307.png",
+        "name": "Doç. Dr. İlker ÜNAL",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 7. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 7. kapı."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "room_code": 398,
+        "route_image": "c_blok_398.png",
+        "name": "DEPO",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 8. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 8. kapı."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "room_code": 308,
+        "route_image": "c_blok_309.png",
+        "name": "Erol İBİK",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 9. kapı",
+                "description": "3. katta büyük merdivenlerin karşısındaki 9. kapı."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "room_code": 399,
+        "route_image": "c_blok_399.png",
+        "name": "Tek. Erol DEMİR",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun karşısındaki kapı",
+                "description": "3. katta ana koridorun sonundaki kapı."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "room_code": 309,
+        "route_image": "c_blok_309.png",
+        "name": "BİLGİSAYAR KULLANIM LAB.",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 9. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 9. kapı."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "room_code": 310,
+        "route_image": "c_blok_310.png",
+        "name": "Öğr. Gör. Hasan ÖZALP",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 8. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 8. kapı."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "room_code": 310,
+        "route_image": "c_blok_310.png",
+        "name": "Prof.Dr. Şeref KILIÇ",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 8. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 8. kapı."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "room_code": 311,
+        "route_image": "c_blok_311.png",
+        "name": "Öğr. Gör. Dr. Arif Nihat AKÇAL",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 7. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 7. kapı."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "room_code": 311,
+        "route_image": "c_blok_311.png",
+        "name": "Öğr. Gör. Dr.Ercüment AKSOY",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 7. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 7. kapı."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "room_code": 312,
+        "route_image": "c_blok_312.png",
+        "name": "Öğr. Gör.Orhan KISA",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 6. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 6. kapı."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "room_code": 312,
+        "route_image": "c_blok_312.png",
+        "name": "Öğr. Gör. Erokan CANBAZOĞLU",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 6. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 6. kapı."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "room_code": 312,
+        "route_image": "c_blok_312.png",
+        "name": "Öğr. Gör. Ekrem SAYDAM",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 6. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 6. kapı."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "room_code": 313,
+        "route_image": "c_blok_313.png",
+        "name": "Öğr. Gör.Mehmet KEMER",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 5. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 5. kapı."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "room_code": 313,
+        "route_image": "c_blok_313.png",
+        "name": "Öğr. Gör. Altuğ ERKAN",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 5. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 5. kapı."
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "room_code": 313,
+        "route_image": "c_blok_313.png",
+        "name": "Öğr. Gör. Oğuz ÜMİT",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 5. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 5. kapı."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "room_code": 314,
+        "route_image": "c_blok_314.png",
+        "name": "COĞRAFİ BİLGİ SİSTEMLERİ LAB.",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden 3. kata çık",
+                "description": "Büyük ana merdivenlerden yukarı 3. kata çık."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridoru Takip Et",
+                "description": "3. katta ana koridoru takip ediniz."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 4. kapı",
+                "description": "3. katta büyük merdivenlerin yanındaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "room_code": 315,
+        "route_image": "c_blok_315.png",
+        "name": "Doç. Dr. Özge TUFAN ÇETİN",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 1. kapı",
+                "description": "Ara katta kordidorun solundaki 1. kapı."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "room_code": 316,
+        "route_image": "c_blok_316.png",
+        "name": "Prof.Dr. Kubilay ÜNAL",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 2. kapı",
+                "description": "Ara katta kordidorun solundaki 2. kapı."
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "room_code": 317,
+        "route_image": "c_blok_317.png",
+        "name": "Prof.Dr.Bülent TOPÇUOĞLU",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 3. kapı",
+                "description": "Ara katta kordidorun solundaki 3. kapı."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "room_code": 318,
+        "route_image": "c_blok_318.png",
+        "name": "Öğr. Gör.Osman ÖRSMEN",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 4. kapı",
+                "description": "Ara katta kordidorun solundaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "room_code": 318,
+        "route_image": "c_blok_318.png",
+        "name": "ÖÖğr. Gör. Adile BAŞGÖR",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 4. kapı",
+                "description": "Ara katta kordidorun solundaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "room_code": 318,
+        "route_image": "c_blok_318.png",
+        "name": "Öğr. Gör. Hakan OĞUZ",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 4. kapı",
+                "description": "Ara katta kordidorun solundaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "room_code": 318,
+        "route_image": "c_blok_318.png",
+        "name": "Öğr. Gör. E. Nesrin Özdemir",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun solundaki 4. kapı",
+                "description": "Ara katta kordidorun solundaki 4. kapı."
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "room_code": 319,
+        "route_image": "c_blok_319.png",
+        "name": "Öğr. Gör. T. Fikret HORZUM",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 3. kapı",
+                "description": "Ara katta kordidorun sağındaki 3. kapı."
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "room_code": 319,
+        "route_image": "c_blok_319.png",
+        "name": "Öğr. Gör. N. Özgür KUTLU",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 3. kapı",
+                "description": "Ara katta kordidorun sağındaki 3. kapı."
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "room_code": 319,
+        "route_image": "c_blok_319.png",
+        "name": "Öğr. Gör. Levent UZUNSAKAL",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 3. kapı",
+                "description": "Ara katta kordidorun sağındaki 3. kapı."
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "room_code": 320,
+        "route_image": "c_blok_319.png",
+        "name": "Doç. Dr. Ceren KARAMAN",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 2. kapı",
+                "description": "Ara katta kordidorun sağındaki 2. kapı."
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "room_code": 321,
+        "route_image": "c_blok_321.png",
+        "name": "Doç. Dr. Kamile ULUKAPI",
+        "paths": [
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Ana binaya gidiniz.",
+                "description": "Kuzey doğu yönünde büyük binaya doğru 25m ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Girişten gir, kantini geç, karşıya ilerle.",
+                "description": "Kantin girişinden gir, kantini geç, karşıya ana büyük merdivenlere doğru ilerle."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Büyük merdivenlerden ara kata çık",
+                "description": "3. Kat ile 2. Kat arasındaki kat koridoru."
+            },
+            {
+                "icon": "fa-solid fa-arrow-turn-up",
+                "directive": "Koridorun sağındaki 1. kapı",
+                "description": "Ara katta kordidorun sağındaki 1. kapı."
+            }
+        ]
+    }
+]

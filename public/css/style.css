@@ -37,7 +37,7 @@ body {
 }
 
 /* --- menu button --------------------- */
-div:has(.menu-button) {
+div:has(.open-menu-button) {
     display: block;
     position: fixed;
     margin-top: 10px;
@@ -79,4 +79,25 @@ div:has(.menu-button) {
 
 .menu-select .col-12 {
     margin-top: 0;
+}
+
+/* --- select2 ------------- */
+.select2 {
+    width: 100%!important;
+}
+
+.select2-results__options {
+    max-height: 70vh!important;
+}
+
+.select2-selection {
+    height: 40px!important;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+/* --- routes ------------- */
+.route-icon {
+    padding-left: 12px;
+    padding-top: 8px;
 }

@@ -7,7 +7,9 @@ var selectedZoom = 6.5,
     beforezoom = selectedZoom,
     focusX = -1183, focusY = -166,
     pinX = 4898, pinY = 3143,
-    locations
+    locations,
+    locationID,
+    targets = []
 
 
 
@@ -15,6 +17,28 @@ var selectedZoom = 6.5,
 
 
 // INCLUDES ////////////////////////////////////////////////////////
+readTextFile("./public/json/locations.json", function (e) {
+    locations = JSON.parse(e);
+});
+
+
+for (let i = 0; i < 9; i++) {
+    readTextFile(`./public/json/targets_${i}.json`, function (e) {
+        targets.push(JSON.parse(e));
+
+        optionsComp = `<option selected>Hedef Konum Seçiniz</option>`
+        if (i == 0) {
+            let options = targets[0];
+            options.forEach(option => {
+                optionsComp += `<option value="${parseInt(option.id)}">${option.room_code} ${option.name.trim()}</option>`
+            });
+            document.getElementById('floatingSelect').innerHTML = optionsComp
+        }
+    });
+
+}
+
+
 readTextFile("./public/json/locations.json", function (e) {
     locations = JSON.parse(e);
 });
@@ -32,17 +56,7 @@ window.onload = function () {
 
 window.onresize = function () {
     location.reload();
-    // onResizeWindow()
 };
-
-/* function onResizeWindow() {
-    let comp = document.getElementsByClassName('mappy')[0]
-    comp.style.width = window.innerWidth;
-    comp.style.height = window.innerHeight;
-
-    console.log(comp.style.width)
-    console.log(comp.style.height)
-} */
 
 
 document.getElementsByClassName('zoom-in')[0].addEventListener('click', zoomInOnMap)
@@ -59,6 +73,53 @@ function zoomOutOnMap() {
     getEastMapZoom(selectedZoom);
 }
 
+document.getElementsByClassName('on-location-btn')[0].addEventListener('click', onCurrLocation)
+function onCurrLocation() {
+    getCoords(focusX, focusY);
+}
+
+document.getElementsByClassName('open-menu-button')[0].addEventListener('click', openMenuButton)
+function openMenuButton() {
+    openMenu()
+}
+
+document.getElementsByClassName('close-menu-button')[0].addEventListener('click', closeMenuButton)
+function closeMenuButton() {
+    closeMenu()
+}
+
+$(document).on(`change`, `#floatingSelect`, function() {
+    let targetID = $(this).val()
+    let selectedTarget = targets[locationID][targetID]
+    let selectedPaths = selectedTarget.paths
+    let comp = ``
+    selectedPaths.forEach(path => {
+        let item = `<div class="col-12">
+            <div class="row">
+                <div class="col-2">
+                    <h1 class="route-icon"><i class="${path.icon}"></i></h1>
+                </div>
+                <div class="col-10">
+                    <h4 class="route-head">${path.directive}</h4>
+                    <p class="route-desc">${path.description}</p>
+                </div>
+            </div>
+        </div>`
+
+        comp += item
+    });
+    document.getElementsByClassName('menu-route')[0].innerHTML = comp
+
+
+    $(`.map-item`).remove()
+
+    let mapItem = `<a class="map-item" style="top:0px;left:0px;">
+        <img src="public/img/route/001.png" main-width="6767" main-height="3805" main-top="0" main-left="0" />
+    </a>`
+
+    $(`#worldMap`).append(mapItem);
+})
+
 
 
 
@@ -72,15 +133,27 @@ async function getStart() {
         if (locations != undefined) {
             clearInterval(timer);
 
-            i = 0;
+            let i
+            let locationCode = getGETParam("location");
+            if (locationCode != null) {
+                locations.forEach(e => {
+                    if (locationCode == e.code) {
+                        i = e.id;
+                    }
+                });
+            } else {
+                i = 0; // main_entrance
+            }
+            locationID = i;
+
             pinX = locations[i].pinX
             pinY = locations[i].pinY
             focusX = locations[i].focusX
             focusY = locations[i].focusY
             selectedZoom = locations[i].zoom
-        
+
             getPinLocate(pinX, pinY)
-        
+
             genMap()
             getEastMapZoom(selectedZoom);
             setTimeout(() => {
@@ -97,7 +170,9 @@ async function getStart() {
                 }, 40);
             }, 40);
         }
-    }, 40);  
+    }, 40);
+
+    $(`.select2`).select2();
 }
 
 
@@ -156,9 +231,6 @@ function getEastMapZoom(zoom = 1) {
         return false;
     }
 
-    // console.log(beforezoom)
-    // console.log(selectedZoom)
-
     if (selectedZoom < beforezoom) {
         zoomtype = "zoomout";
     } else {
@@ -195,22 +267,6 @@ function getEastMapZoom(zoom = 1) {
 
             map.style.width = w + "px";
             map.style.height = h + "px";
-
-            // --- BAD WORKING ---
-            // map.style.left = parseInt(parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()) / zoom) + "px"
-            // map.style.top = parseInt(parseInt(map.style.top.substring(0, map.style.top.length - 2).trim()) / zoom) + "px"
-            /*
-            if (zoomtype == "zoomin") {
-                let l = parseInt(map.style.left.substring(0, map.style.left.length - 2).trim()),
-                    t = parseInt(map.style.top.substring(0, map.style.top.length - 2).trim())
-
-                
-                map.style.left = parseInt(l - (window.innerWidth * -diff)) + "px"
-                map.style.top = parseInt(t - (window.innerHeight * -diff)) + "px"
-                
-            }
-            */
-            // getCoords(map.style.left, map.style.top);
         }
 
 
@@ -265,4 +321,69 @@ function readTextFile(file, callback) {
         }
     }
     rawFile.send(null);
+}
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------
+// Close Menu
+function closeMenu() {
+    // menu-bar animate__animated animate__backOutLeft animate__faster
+
+    let menuBar = document.getElementsByClassName('menu-bar')[0]
+    let menuBarCls = menuBar.classList
+
+    menuBarCls.add("animate__backOutLeft");
+    menuBarCls.add("animate__animated");
+    menuBarCls.add("animate__faster");
+
+    setTimeout(() => {
+        menuBar.style.display = "none"
+    }, 525);
+    setTimeout(() => {
+        menuBarCls.remove("animate__backOutLeft");
+        menuBarCls.remove("animate__animated");
+        menuBarCls.remove("animate__faster");
+    }, 550);
+}
+
+
+
+// Open Menu
+function openMenu() {
+    // menu-bar animate__animated animate__backOutLeft animate__faster
+
+    let menuBar = document.getElementsByClassName('menu-bar')[0]
+    let menuBarCls = menuBar.classList
+
+    menuBarCls.add("animate__backInLeft");
+    menuBarCls.add("animate__animated");
+    menuBarCls.add("animate__faster");
+
+    menuBar.style.display = "block"
+    setTimeout(() => {
+    }, 525);
+    setTimeout(() => {
+        menuBarCls.remove("animate__backInLeft");
+        menuBarCls.remove("animate__animated");
+        menuBarCls.remove("animate__faster");
+    }, 550);
+}
+
+
+// func _GET Catch
+function getGETParam(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+            tmp = item.split("=");
+            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
 }
