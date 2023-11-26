@@ -25,7 +25,7 @@ var selectedZoom = 6.5,
 
 for (let i = 0; i < 9; i++) {
     readTextFile(`./public/json/targets_${i}.json`, function (e) {
-        targets.push(JSON.parse(e));
+        targets[i] = JSON.parse(e);
 
         optionsComp = `<option selected>Hedef Konum Seçiniz</option>`
         if (i == 0) {
