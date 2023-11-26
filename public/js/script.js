@@ -121,14 +121,7 @@ $(document).on(`change`, `#floatingSelect`, function () {
     });
     document.getElementsByClassName('menu-route')[0].innerHTML = comp
 
-
-    $(`.map-route-item`).remove()
-
-    let mapItem = `<a class="map-item map-route-item" style="top:0px;left:0px;">
-        <img src="public/img/route/001.png" main-width="6767" main-height="3805" main-top="0" main-left="0" />
-    </a>`
-
-    $(`#worldMap`).append(mapItem);
+    $(`#location-image`).find("img").attr("src", `public/img/route/${selectedTarget.route_image}`);
 })
 
 
