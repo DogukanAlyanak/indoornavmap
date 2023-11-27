@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<!-- version : 1.0.13.2311261947 -->
+<!-- version : 1.0.14.2311270908 -->
 
 <head>
   <meta charset="UTF-8">
@@ -82,15 +82,23 @@
     <button type="button" class="btn btn-primary btn-md on-location-btn">
       <i class="fa-duotone fa-location-crosshairs"></i>
     </button>
+    <button type="button" class="btn btn-primary btn-md satallite-on-off-btn">
+      <i class="fa-solid fa-satellite"></i>
+    </button>
   </div>
 
   <div class="mapping wait-loading">
     <div id="worldMap">
       <img src="public/img/3_floor_map.jpg" class="map-image" main-height="3805" main-width="6767" />
 
+      <a id="satelliteMap" class="map-item" style="top:0px;left:0px;display: none;">
+        <img src="public/img/satellite_map.jpg" main-width="6767" main-height="3805" main-top="0" main-left="0" />
+      </a>
+
+
+
       <a id="location-image" class="map-item" style="top:0px;left:0px;">
-          <img src="public/img/route/empty.png" 
-            main-width="6767" main-height="3805" main-top="0" main-left="0" />
+        <img src="public/img/route/empty.png" main-width="6767" main-height="3805" main-top="0" main-left="0" />
       </a>
 
       <a id="pin" class="map-item" style="top:2269px;left:4898px;">

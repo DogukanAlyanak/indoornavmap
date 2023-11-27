@@ -124,6 +124,21 @@ $(document).on(`change`, `#floatingSelect`, function () {
     $(`#location-image`).find("img").attr("src", `public/img/route/${selectedTarget.route_image}`);
 })
 
+let satalliteShow = false
+$(document).on(`click`, `.satallite-on-off-btn`, function () {
+    if (satalliteShow) {
+        satalliteShow = false;
+    } else {
+        satalliteShow = true;
+    }
+
+    if (satalliteShow) {
+        $(`#satelliteMap`).css("display", `none`);
+    } else {
+        $(`#satelliteMap`).css("display", `block`);
+    }
+})
+
 
 
 

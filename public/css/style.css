@@ -16,8 +16,7 @@ body {
     width: 60px;
 }
 
-.zoom-out,
-.zoom-in {
+.zoom-buttons button {
     margin-bottom: 4px;
 }
 
