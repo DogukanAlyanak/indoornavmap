@@ -133,9 +133,9 @@ $(document).on(`click`, `.satallite-on-off-btn`, function () {
     }
 
     if (satalliteShow) {
-        $(`#satelliteMap`).css("display", `none`);
-    } else {
         $(`#satelliteMap`).css("display", `block`);
+    } else {
+        $(`#satelliteMap`).css("display", `none`);
     }
 })
 
