@@ -104,7 +104,9 @@ $(document).on(`change`, `#floatingSelect`, function () {
     let selectedTarget = targets[locationID][targetID]
     let selectedPaths = selectedTarget.paths
     let comp = ``
+    let speakTextMsg = ``
     selectedPaths.forEach(path => {
+        speakTextMsg += ", " + path.directive
         let item = `<div class="col-12">
             <div class="row">
                 <div class="col-2">
@@ -122,6 +124,8 @@ $(document).on(`change`, `#floatingSelect`, function () {
     document.getElementsByClassName('menu-route')[0].innerHTML = comp
 
     $(`#location-image`).find("img").attr("src", `public/img/route/${selectedTarget.route_image}`);
+
+    speakText(speakTextMsg)
 })
 
 let satalliteShow = false
@@ -405,4 +409,12 @@ function getGETParam(parameterName) {
             if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
         });
     return result;
+}
+
+
+
+function speakText(e) {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = e;
+    window.speechSynthesis.speak(msg);
 }
